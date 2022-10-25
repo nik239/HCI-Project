@@ -5,15 +5,15 @@ import numpy as np
 first_frequency = config.first_freq
 final_frequency = config.final_freq
 increment = config.increment
-
+project_directory = config.project_directory
 
 def generate_waves(frequency):
     samplerate = 44100
     seconds = 1
 
-    project_directory = "/Users/nikitaivanov/Desktop/HCI project/"
     soundname = project_directory+str(frequency)+".wav"
 
+    #The following part of the function is mostly a copy-paste from Stack Exchange
     t = np.linspace(0, seconds, samplerate)
     left_channel = 0.5 * np.sin(2 * np.pi * frequency * t)
     right_channel = left_channel

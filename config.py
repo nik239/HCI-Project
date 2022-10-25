@@ -1,3 +1,4 @@
-first_freq = 2000
-final_freq = 5000
-increment = 100
+first_freq = 1000
+final_freq = 7000
+increment = 200
+project_directory = "/Users/nikitaivanov/Desktop/HCI project/"
